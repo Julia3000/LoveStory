@@ -1,0 +1,43 @@
+.box {
+	width: 1350px;
+	height: 643px;
+	background-image: url(foto/IMG_0771.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+body{
+	width: 1919px;
+}
+.name{
+	float: left;
+	font-size: 36px;
+}
+.manu{
+	float: right;
+	list-style: none;
+}
+.manu>li{
+	list-style: none;
+	float: left;
+
+}
+.manu>li>a{
+	text-decoration: none;
+	font-size: 26px;
+	display: block;
+	margin: 0 1em;
+	padding: 0;
+	color: black;
+}
+.manu>li>a:hover{
+	opacity: 0.5;
+}
+span{
+	position: absolute;
+	top: 300px;
+	right: 135px;
+	float: right;
+	font-size: 36px;
+	color: white;
+}
