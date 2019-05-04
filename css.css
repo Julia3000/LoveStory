@@ -8,6 +8,7 @@
 }
 body{
 	width: 1919px;
+
 }
 .name{
 	float: left;
@@ -16,6 +17,14 @@ body{
 .manu{
 	float: right;
 	list-style: none;
+	background: rgba(34,34,34,.2);
+	margin: 0;
+    padding: 0;
+}
+.manu:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 .manu>li{
 	list-style: none;
@@ -24,20 +33,113 @@ body{
 }
 .manu>li>a{
 	text-decoration: none;
-	font-size: 26px;
+	font-size: 20px;
 	display: block;
 	margin: 0 1em;
-	padding: 0;
 	color: black;
+  line-height: 80px;
+  padding: 0px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: white;
+  transition: .3s linear;
 }
-.manu>li>a:hover{
-	opacity: 0.5;
+.manu>li:hover{
+	background: rgba(0,0,0,.3);
 }
+@media (max-width: 830px) {
+.manu {
+  padding-top: 90px;
+  text-align: center;
+}
+.manu li {
+  float: none;
+  display: inline-block;
+}
+.manun a {
+  line-height: normal;
+  padding: 20px 15px;
+  font-size: 16px;
+}
+}
+@media (max-width: 630px) {
+.manu li {display: block;}
+}	
 span{
+	width: px;
+	height: 50px;
+	padding: 10px;
 	position: absolute;
 	top: 300px;
 	right: 135px;
 	float: right;
 	font-size: 36px;
 	color: white;
+}
+.content{
+	width: 1919px;
+	height: 2000px;
+	background-color: blue;
+	display: block;
+}
+.borders{
+	position: center;
+	display: block;
+	position: relative;
+	top: -75px;
+	left: 250px;
+}
+.borders>li{
+	list-style: none;
+	width: 200px;
+	height: 200px;
+	background-image: url(foto/IMG_148.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border-radius: 35px;
+	display: inline-block;
+	margin: 10px;
+
+}
+#img{
+	background-image: url(foto/IMG_157.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border-radius: 35px;
+}
+.borders>li:last-child{
+	background-image: url(foto/IMG_153.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border-radius: 35px;
+}
+.li{
+	width: 200px;
+	height: 200px;
+	background-image: url(foto/ramka.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;	
+}
+.history{
+	width: 1919px;
+	height: 1000px;
+	background-color: yellow;
+	margin-top: -256px;
+}
+.gallery{
+	width: 1919px;
+	height: 1000px;
+	background-color: orange;
+}
+.forma{
+	width: 1919px;
+	height: 500px;
+	background-image: url(foto/IMG_1971.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;	
 }
