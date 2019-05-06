@@ -1,7 +1,7 @@
 .box {
 	width: 1350px;
 	height: 643px;
-	background-image: url(foto/IMG_0771.jpg);
+	background-image: url(foto/-min.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -14,56 +14,56 @@ body{
 	float: left;
 	font-size: 36px;
 }
-.manu{
+#menu{
 	float: right;
 	list-style: none;
 	background: rgba(34,34,34,.2);
 	margin: 0;
     padding: 0;
 }
-.manu:after {
-  content: "";
-  display: table;
-  clear: both;
+#menu:after {
+	content: "";
+	display: table;
+    clear: both;
 }
-.manu>li{
+#menu>li{
 	list-style: none;
 	float: left;
 
 }
-.manu>li>a{
+#menu>li>a{
 	text-decoration: none;
 	font-size: 20px;
 	display: block;
 	margin: 0 1em;
 	color: black;
-  line-height: 80px;
-  padding: 0px;
-  letter-spacing: 2px;
-  font-weight: bold;
-  color: white;
-  transition: .3s linear;
+    line-height: 80px;
+    padding: 0px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: white;
+    transition: .3s linear;
 }
-.manu>li:hover{
+#menu>li:hover{
 	background: rgba(0,0,0,.3);
 }
 @media (max-width: 830px) {
-.manu {
-  padding-top: 90px;
-  text-align: center;
+#menu {
+	padding-top: 90px;
+    text-align: center;
 }
-.manu li {
-  float: none;
-  display: inline-block;
+#menu li {
+	float: none;
+    display: inline-block;
 }
-.manun a {
-  line-height: normal;
-  padding: 20px 15px;
-  font-size: 16px;
+#menu a {
+	line-height: normal;
+	padding: 20px 15px;
+	font-size: 16px;
 }
 }
 @media (max-width: 630px) {
-.manu li {display: block;}
+#menu li {display: block;}
 }	
 span{
 	width: px;
@@ -93,7 +93,7 @@ span{
 	list-style: none;
 	width: 200px;
 	height: 200px;
-	background-image: url(foto/IMG_148.jpg);
+	background-image: url(foto/IMG_148-min.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -103,14 +103,14 @@ span{
 
 }
 #img{
-	background-image: url(foto/IMG_157.jpg);
+	background-image: url(foto/IMG_157-min.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	border-radius: 35px;
 }
 .borders>li:last-child{
-	background-image: url(foto/IMG_153.jpg);
+	background-image: url(foto/IMG_153-min.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -124,6 +124,7 @@ span{
 	background-position: center;
 	background-size: cover;	
 }
+
 .history{
 	width: 1919px;
 	height: 1000px;
@@ -135,11 +136,50 @@ span{
 	height: 1000px;
 	background-color: orange;
 }
+* {box-sizing: border-box;}
 .forma{
 	width: 1919px;
-	height: 500px;
-	background-image: url(foto/IMG_1971.jpg);
+	height: 600px;
+	background-image: url(foto/IMG_2121.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;	
+	
+}
+form{position: relative;
+  	padding: 60px 50px;
+  	padding-top: px;
+}
+h1{
+	position: relative;
+	font-size: 26px;
+	font-weight: ;
+	color: white;
+}
+form input{
+	display: block;
+  	width: 400px;
+  	padding: 0 15px;
+  	margin: 10px 0 15px;
+  	border-width: 0;
+  	color: white;
+  	line-height: 40px;
+  	border-radius: 20px;
+  	color: white;
+  	background: rgba(255,255,255,.1);
+}
+textarea{
+	display: block;
+  	width: 400px;
+  	padding: 0 20px;
+  	margin-bottom: 10px;
+  	line-height: 40px;
+  	border-width: 0;
+  	border-radius: 20px;
+  	resize: none;
+  	color: white;
+  	background: rgba(255,255,255,.1);
+}
+form input[type="submit"]:hover{
+	background: rgba(255,255,255,.0);
 }
