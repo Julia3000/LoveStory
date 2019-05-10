@@ -8,7 +8,7 @@
 }
 body{
 	width: 1919px;
-
+	height: 3149px;
 }
 .name{
 	float: left;
@@ -182,4 +182,56 @@ textarea{
 }
 form input[type="submit"]:hover{
 	background: rgba(255,255,255,.0);
+}
+.footer{
+	display: block;
+	position: relative;
+	top: -80px;
+  	height: 100px;
+  	color: white;
+  	padding-left:  600px;
+}
+.address{
+}
+.contacts{
+	margin-top: 10px
+}
+.contacts>a{
+	display: inline-block;
+	
+}
+.face{
+	background-image: url(foto/face.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 20px;
+	height: 25px;
+	margin-right: 25px;
+}
+.insta{
+	background-image: url(foto/insta.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 27px;
+	height: 25px;
+	margin-right: 22px;
+}
+.vk{
+	background-image: url(foto/vk.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 35px;
+	height: 23px;
+	margin-right: 25px;
+
+}
+.twit{
+	background-image: url(foto/twit.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 25px;
+	height: 23px;
+}
+.face:hover{
+	
 }
