@@ -4,39 +4,54 @@
 	<meta charset="UTF-8">
 	<title>Button</title>
 	<style>
-	.blok {
-        width: 300px;
-        height: 100px;
-        margin-bottom: 2em; 
-		}
-	.blok1{
-		border-radius: 10px;
-		-webkit-box-shadow: 10px 10px 5px rgba(0,0,0,0.3);
-		box-shadow: 10px 10px 5px rgba(0,0,0,0.3);
-		background-color:  hsla(300, 50%, 50%);
 
-	}
-	.blok2{
-		background-color:  hsla(240, 50%, 50%);
+div {
+  font-size: 0;
+}
 
-	}
-	.blok3{
-		background-color:  hsla(180, 50%, 50%);
-	}
-	.blok1:hover{
-		background-color:  hsla(300, 50%, 40%);
-	}
-	.blok2:hover{
-		background-color:  hsla(240, 50%, 40%);
-	}
-	.blok3:hover{
-		background-color:  hsla(180, 50%, 40%);
-	}
-	a {
-		padding: 30px;
-		text-align: center;
-		text-decoration: none;
+a {
+  font-size: 16px;
+  overflow: hidden;
+  display: inline-block;
+  margin-bottom: 8px;
+  width: calc(50% - 4px);
+  margin-right: 8px;
+}
 
+a:nth-of-type(2n) {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 50em) {
+  a {
+    width: calc(25% - 6px);
+  }
+  
+  a:nth-of-type(2n) {
+    margin-right: 8px;
+  }
+  
+  a:nth-of-type(4n) {
+    margin-right: 0;
+  }
+}
+
+a:hover img {
+  transform: scale(1.15);
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  border: none;
+  max-width: 1000px;
+  height: auto;
+  display: block;
+  background: #ccc;
+  transition: transform .2s ease-in-out;
+}
 
 	}
 	</style>
@@ -45,6 +60,57 @@
 	<div class="blok blok1"><a href="">Клик</a></div>
 	<div class="blok blok2"></div>
 	<div class="blok blok3"></div>
-
+<div>
+  <a href="">
+    <figure>
+      <img src="foto/IMG_160-min.jpg" alt="">
+    </figure>
+  </a>
+  <a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg02.jpg">
+    <figure>
+      <img src="foto/IMG_095-min.jpg" alt="">
+    </figure>
+  </a>
+  <a href="foto/IMG_161-min.jpg">
+    <figure>
+      <img src="foto/IMG_161-min.jpg" alt="">
+    </figure>
+  </a>
+  <a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg04.jpg">
+    <figure>
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg04.jpg" alt="">
+    </figure>
+  </a>
+  <a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg05.jpg">
+    <figure>
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg05.jpg" alt="">
+    </figure>
+  </a>
+  <a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg06.jpg">
+    <figure>
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg06.jpg" alt="">
+    </figure>
+  </a>
+  <a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg07.jpg">
+    <figure>
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg07.jpg" alt="">
+    </figure>
+  </a>
+  <a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg08.jpg">
+    <figure>
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg08.jpg" alt="">
+    </figure>
+  </a>
+  <a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg09.jpg">
+    <figure>
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg09.jpg" alt="">
+    </figure>
+  </a>
+  <a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg10.jpg">
+    <figure>
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg10.jpg" alt="">
+    </figure>
+  </a>
+</div>
 </body>
 </html>
